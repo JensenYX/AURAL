@@ -1,12 +1,28 @@
-# AURAL
+<h1 align="center">AURAL</h1>
 
-**面向语音语言模型的联合分块与自适应潜在推理**
+<p align="center">
+  <strong>面向语音语言模型的<br>联合分块与自适应潜在推理</strong>
+</p>
 
-[English](README.md) · [简体中文](README_zh.md) · [论文](https://arxiv.org/abs/2610.01560) · [模型](https://huggingface.co/YuxiangW/AURAL) · [数据](https://huggingface.co/datasets/YuxiangW/AuralReason)
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.01560"><img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=343541" alt="arXiv 论文" height="28"></a>
+  <a href="https://huggingface.co/YuxiangW/AURAL"><img src="https://img.shields.io/badge/Hugging_Face-Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=FFD21E&amp;labelColor=343541" alt="Hugging Face 模型" height="28"></a>
+  <a href="https://huggingface.co/datasets/YuxiangW/AuralReason"><img src="https://img.shields.io/badge/Hugging_Face-Dataset-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=FFD21E&amp;labelColor=343541" alt="Hugging Face 数据集" height="28"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <strong>简体中文</strong>
+</p>
+
+<p align="center">
+  <a href="#安装">安装</a> · <a href="#推理">推理</a> · <a href="#auralreason">AuralReason</a> · <a href="#训练">训练</a>
+</p>
 
 AURAL 在连续潜在空间中完成推理，再生成文本回答。AURAL-SFT 从简洁的思维链中学习未来潜在状态块的分布；AURAL-RL 通过答案质量与推理简洁性相结合的奖励，提升回答质量并学习何时结束推理。
 
-<img src="assets/overview.png" alt="AURAL 监督训练、强化学习与实验结果" width="100%">
+<p align="center">
+  <a href="assets/overview.png"><img src="assets/overview.png" alt="AURAL 监督训练、强化学习与实验结果" width="100%"></a>
+</p>
 
 公开的 **AURAL-RL** 权重基于 **Qwen2.5-Omni-7B**，默认压缩率 **c = 4**、块大小 **m = 10**、高斯分量数为 4、协方差低秩项的秩为 16。
 

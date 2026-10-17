@@ -1,12 +1,28 @@
-# AURAL
+<h1 align="center">AURAL</h1>
 
-**Adaptive Latent Reasoning with Joint Chunk for Speech Language Models**
+<p align="center">
+  <strong>Adaptive Latent Reasoning with Joint Chunk<br>for Speech Language Models</strong>
+</p>
 
-[English](README.md) · [简体中文](README_zh.md) · [Paper](https://arxiv.org/abs/2610.01560) · [Model](https://huggingface.co/YuxiangW/AURAL) · [Dataset](https://huggingface.co/datasets/YuxiangW/AuralReason)
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.01560"><img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=343541" alt="arXiv Paper" height="28"></a>
+  <a href="https://huggingface.co/YuxiangW/AURAL"><img src="https://img.shields.io/badge/Hugging_Face-Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=FFD21E&amp;labelColor=343541" alt="Hugging Face Model" height="28"></a>
+  <a href="https://huggingface.co/datasets/YuxiangW/AuralReason"><img src="https://img.shields.io/badge/Hugging_Face-Dataset-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=FFD21E&amp;labelColor=343541" alt="Hugging Face Dataset" height="28"></a>
+</p>
+
+<p align="center">
+  <strong>English</strong> · <a href="README_zh.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="#installation">Installation</a> · <a href="#inference">Inference</a> · <a href="#auralreason">AuralReason</a> · <a href="#training">Training</a>
+</p>
 
 AURAL reasons in continuous latent space and then generates a text answer. AURAL-SFT learns a distribution over future latent chunks from concise chain-of-thought supervision. AURAL-RL improves answer quality and learns when to stop reasoning through a quality-weighted conciseness reward.
 
-<img src="assets/overview.png" alt="AURAL supervised learning, reinforcement learning, and results" width="100%">
+<p align="center">
+  <a href="assets/overview.png"><img src="assets/overview.png" alt="AURAL supervised learning, reinforcement learning, and results" width="100%"></a>
+</p>
 
 The released **AURAL-RL** checkpoint uses **Qwen2.5-Omni-7B**, compression factor **c = 4**, chunk size **m = 10**, four Gaussian components, and a covariance rank of 16.
 
